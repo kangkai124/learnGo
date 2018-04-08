@@ -11,14 +11,14 @@ import "fmt"
  /* 包
   * 每个目录一个包
   * main包包含可执行入口
-  */ 
+  */
 type Node struct {
 	Value int
 	Left, Right *Node
 }
 
 func (node Node) Print() {
-	fmt.Println(node.Value)
+	fmt.Print(node.Value, " ")
 }
 
 func (node *Node) SetValue(Value int) {
