@@ -65,7 +65,8 @@ func main() {
 	}
 
 	fmt.Println("try a session")
-	fmt.Println(session(&retriever))
+	s := session(&retriever)
+	fmt.Println(s)
 
 }
 
